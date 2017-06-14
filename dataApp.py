@@ -15,11 +15,19 @@ class dataApp(server.App):
     inputs = [{ "type" : "text",
                    "key" : "words",
                    "label" : "words",
-                   "value" : "testing 123"}]
+                   "value" : "testing 123",
+                "action_id" : "html"
+                }]
 
     #list of outputs dictionaries
     outputs = [{"type" : "html",
-                    "id" : "html"}]
+                    "id" : "html",
+                "control_id" : "button1"}]
+
+    #controls are also a list of dicts
+    controls = [{"type": "button",
+                 "label": "press to update",
+                 "id": "button1"}]
 
     #params is how the inputs talk to the outputs
     #its a dictionary keyed by whatever keys we made in the inputs dict
