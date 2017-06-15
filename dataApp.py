@@ -1,3 +1,4 @@
+
 from spyre import server
 
 import pandas as pd
@@ -34,8 +35,11 @@ class dataApp(server.App):
     def getHTML(self, params):
         words=params["words"]
         #because its html we can also add html tags
-        return "these are the words we made: <b>%s</b>"%words
+        return "these are the words we made: <b>%s</b> "%words
 
 #instence of the app
 app = dataApp()
 app.launch()
+
+
+

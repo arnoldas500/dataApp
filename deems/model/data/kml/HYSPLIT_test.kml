@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+<Document>
+<name>NOAA HYSPLIT RESULTS</name>
+      <open>1</open>
+      <LookAt>
+         <longitude> -78.3682 </longitude>
+         <latitude>  43.0002 </latitude>
+         <altitude>0</altitude>
+         <tilt>0</tilt>
+         <range>13700</range>
+         <gx:TimeStamp>
+             <when>2016-11-13T20:00:00Z</when>
+         </gx:TimeStamp>
+         <gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+      </LookAt>
+</Document>
+</kml>

@@ -1,0 +1,641 @@
+<kml xmlns:atom="http://www.w3.org/2005/Atom" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns="http://www.opengis.net/kml/2.2">
+  <Document><name>Dispersion Event Evaluation &amp; Mgmt. System (DEEMS)</name><LookAt><longitude> -73.9756
+</longitude><latitude>  42.6524
+</latitude></LookAt><Placemark><name>GELABEL_02_ps.gif</name></Placemark><Style id="conc1">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8FFFFFF</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc2">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C800FFFF</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc3">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8FF0000</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc4">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C800FF00</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc5">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8FFFF00</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc6">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C80000FF</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc7">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C80099FF</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc8">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C800FFFF</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc9">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C800FFCC</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc10">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8009900</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc11">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C866FF00</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc12">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8FFFF00</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc13">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8FF6600</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc14">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8FF0033</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc15">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8FF0099</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc16">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8FF00CC</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc17">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8660066</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc18">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8660099</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc19">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8330066</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc20">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8330033</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc21">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8000099</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc22">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8FFCCFF</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc23">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C80066FF</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc24">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C800CCFF</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc25">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C800FF66</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc26">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C800FF00</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc27">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8CCFF00</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc28">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8FF0000</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc29">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8FF0066</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc30">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8CC00FF</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc31">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C86600FF</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="conc32">
+    <LineStyle>
+      <color>C8000000</color>
+    </LineStyle>
+    <PolyStyle>
+      <color>C8000000</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="maxv">
+    <LineStyle>
+      <color>FFFFFFFF</color>
+      <width>3</width>
+    </LineStyle>
+    <PolyStyle>
+      <fill>0</fill>
+    </PolyStyle>
+  </Style>
+    <Folder>
+<name>&lt;pre&gt;Concentration 
+(Valid:20161113 2000UTC)&lt;/pre&gt;
+</name>
+    <visibility>0</visibility>
+      <description>&lt;pre&gt;
+Averaged from 00150 to 00300m
+Valid:20161113 2000 UTC
+      &lt;/pre&gt;
+    </description>
+<ScreenOverlay>
+<name>Legend</name>
+<Snippet maxLines="0"/>
+<TimeSpan>
+<begin>2016-11-13T19:00:00Z</begin>
+<end>2016-11-13T20:00:00Z</end>
+</TimeSpan>
+<Icon>
+<href>GELABEL_02_ps.gif</href>
+</Icon>
+<overlayXY x="0" y="1" xunits="fraction" yunits="fraction"/>
+<screenXY x="0" y="1" xunits="fraction" yunits="fraction"/>
+<rotationXY x="0" y="0" xunits="fraction" yunits="fraction"/>
+<size x="0" y="0" xunits="pixels" yunits="pixels"/>
+</ScreenOverlay>
+    <Placemark>
+      <name>Contour Level:  0.1 ng/m3</name>
+<Snippet maxLines="0"/>
+<TimeSpan>
+<begin>2016-11-13T19:00:00Z</begin>
+<end>2016-11-13T20:00:00Z</end>
+</TimeSpan>
+   
+       <styleUrl>#conc5</styleUrl>
+       <MultiGeometry>
+      <Polygon>
+       <extrude>1</extrude>
+         <altitudeMode>clampedToGround</altitudeMode>
+       <outerBoundaryIs>
+       <LinearRing>
+       <coordinates>
+-73.61146,42.53943,00300
+-73.60949,42.53605,00300
+-73.57909,42.51833,00300
+-73.54857,42.52085,00300
+-73.53506,42.53917,00300
+-73.53427,42.56164,00300
+-73.54814,42.58364,00300
+-73.54945,42.58418,00300
+-73.57862,42.59156,00300
+-73.59364,42.60682,00300
+-73.60896,42.62660,00300
+-73.63950,42.62780,00300
+-73.65690,42.60701,00300
+-73.65198,42.58451,00300
+-73.63979,42.57515,00300
+-73.62027,42.56194,00300
+-73.61146,42.53943,00300
+       </coordinates>
+       </LinearRing>
+       </outerBoundaryIs>
+      </Polygon>
+      <Polygon>
+       <extrude>1</extrude>
+         <altitudeMode>clampedToGround</altitudeMode>
+       <outerBoundaryIs>
+       <LinearRing>
+       <coordinates>
+-73.86553,42.56244,00300
+-73.85355,42.55359,00300
+-73.82301,42.56112,00300
+-73.79252,42.54961,00300
+-73.76202,42.54566,00300
+-73.73149,42.54682,00300
+-73.70099,42.54391,00300
+-73.67573,42.56210,00300
+-73.67188,42.58457,00300
+-73.67175,42.60705,00300
+-73.67216,42.62954,00300
+-73.67618,42.65203,00300
+-73.70042,42.67337,00300
+-73.70084,42.67457,00300
+-73.71342,42.69708,00300
+-73.73086,42.70812,00300
+-73.76142,42.71765,00300
+-73.79202,42.71955,00300
+-73.80414,42.71974,00300
+-73.82259,42.73042,00300
+-73.84531,42.71979,00300
+-73.85322,42.71979,00300
+-73.88382,42.71976,00300
+-73.91442,42.71982,00300
+-73.94502,42.71984,00300
+-73.97562,42.71916,00300
+-74.00623,42.71975,00300
+-74.03666,42.69736,00300
+-74.03673,42.67488,00300
+-74.03671,42.65240,00300
+-74.03668,42.62992,00300
+-74.03657,42.60744,00300
+-74.00616,42.58508,00300
+-73.97562,42.58568,00300
+-73.94509,42.58499,00300
+-73.91456,42.58500,00300
+-73.88402,42.58500,00300
+-73.87641,42.58493,00300
+-73.86553,42.56244,00300
+       </coordinates>
+       </LinearRing>
+       </outerBoundaryIs>
+      </Polygon>
+    </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>Contour Level: 1 ng/m3</name>
+<Snippet maxLines="0"/>
+<TimeSpan>
+<begin>2016-11-13T19:00:00Z</begin>
+<end>2016-11-13T20:00:00Z</end>
+</TimeSpan>
+   
+       <styleUrl>#conc4</styleUrl>
+       <MultiGeometry>
+      <Polygon>
+       <extrude>1</extrude>
+         <altitudeMode>clampedToGround</altitudeMode>
+       <outerBoundaryIs>
+       <LinearRing>
+       <coordinates>
+-73.82475,42.58487,00500
+-73.82295,42.58397,00500
+-73.81963,42.58487,00500
+-73.79241,42.58582,00500
+-73.77184,42.58479,00500
+-73.76189,42.58041,00500
+-73.73141,42.56836,00500
+-73.70086,42.57422,00500
+-73.69184,42.58462,00500
+-73.68714,42.60709,00500
+-73.69855,42.62960,00500
+-73.70060,42.63231,00500
+-73.73109,42.64820,00500
+-73.73236,42.65216,00500
+-73.73104,42.66181,00500
+-73.71880,42.67461,00500
+-73.73095,42.68435,00500
+-73.75765,42.69717,00500
+-73.76148,42.69951,00500
+-73.79203,42.71651,00500
+-73.82265,42.70818,00500
+-73.85322,42.71933,00500
+-73.88382,42.71917,00500
+-73.91442,42.71949,00500
+-73.94502,42.71965,00500
+-73.97562,42.71280,00500
+-74.00623,42.71877,00500
+-74.03532,42.69736,00500
+-74.03622,42.67488,00500
+-74.03629,42.65240,00500
+-74.03619,42.62992,00500
+-74.03523,42.60744,00500
+-74.00616,42.58606,00500
+-73.97562,42.59207,00500
+-73.94509,42.58518,00500
+-73.91456,42.58532,00500
+-73.88402,42.58559,00500
+-73.85349,42.58521,00500
+-73.82475,42.58487,00500
+       </coordinates>
+       </LinearRing>
+       </outerBoundaryIs>
+      </Polygon>
+    </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>Contour Level: 10 ng/m3</name>
+<Snippet maxLines="0"/>
+<TimeSpan>
+<begin>2016-11-13T19:00:00Z</begin>
+<end>2016-11-13T20:00:00Z</end>
+</TimeSpan>
+   
+       <styleUrl>#conc3</styleUrl>
+       <MultiGeometry>
+      <Polygon>
+       <extrude>1</extrude>
+         <altitudeMode>clampedToGround</altitudeMode>
+       <outerBoundaryIs>
+       <LinearRing>
+       <coordinates>
+-74.02187,42.60744,00700
+-74.00616,42.59589,00700
+-73.98761,42.60745,00700
+-73.97562,42.60867,00700
+-73.97358,42.60745,00700
+-73.94509,42.58711,00700
+-73.91455,42.58858,00700
+-73.88401,42.59151,00700
+-73.85348,42.58976,00700
+-73.82813,42.60736,00700
+-73.82288,42.61136,00700
+-73.79234,42.61134,00700
+-73.76871,42.62975,00700
+-73.76167,42.64511,00700
+-73.75739,42.65221,00700
+-73.76163,42.65836,00700
+-73.76993,42.67472,00700
+-73.79210,42.69202,00700
+-73.82269,42.69283,00700
+-73.82853,42.69728,00700
+-73.85323,42.71481,00700
+-73.88383,42.71318,00700
+-73.91443,42.71629,00700
+-73.94502,42.71772,00700
+-73.97357,42.69738,00700
+-73.97562,42.69618,00700
+-73.98766,42.69738,00700
+-74.00623,42.70892,00700
+-74.02190,42.69737,00700
+-74.03120,42.67488,00700
+-74.03197,42.65241,00700
+-74.03116,42.62992,00700
+-74.02187,42.60744,00700
+       </coordinates>
+       </LinearRing>
+       </outerBoundaryIs>
+      </Polygon>
+    </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>Contour Level: 100 ng/m3</name>
+<Snippet maxLines="0"/>
+<TimeSpan>
+<begin>2016-11-13T19:00:00Z</begin>
+<end>2016-11-13T20:00:00Z</end>
+</TimeSpan>
+   
+       <styleUrl>#conc2</styleUrl>
+       <MultiGeometry>
+      <Polygon>
+       <extrude>1</extrude>
+         <altitudeMode>clampedToGround</altitudeMode>
+       <outerBoundaryIs>
+       <LinearRing>
+       <coordinates>
+-73.94659,42.60745,00900
+-73.94508,42.60637,00900
+-73.94151,42.60745,00900
+-73.91453,42.60979,00900
+-73.88398,42.61374,00900
+-73.85342,42.62145,00900
+-73.84216,42.62986,00900
+-73.82659,42.65232,00900
+-73.84202,42.67482,00900
+-73.85329,42.68328,00900
+-73.88387,42.69102,00900
+-73.91444,42.69507,00900
+-73.94144,42.69738,00900
+-73.94504,42.69844,00900
+-73.94652,42.69738,00900
+-73.97562,42.68032,00900
+-73.98798,42.67490,00900
+-74.00056,42.65242,00900
+-73.98797,42.62994,00900
+-73.97562,42.62454,00900
+-73.94659,42.60745,00900
+       </coordinates>
+       </LinearRing>
+       </outerBoundaryIs>
+      </Polygon>
+    </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>Maximum Value Grid Cell</name>
+      <description>&lt;pre&gt;
+LAT:   42.6524 LON:  -73.9145
+Value: 8.7E+02
+      The square represents the location
+      of maximum concentration and the
+      size of the square represents the
+      concentration grid cell size.
+      &lt;/pre&gt;
+      </description>
+      <Snippet maxLines="0"/>
+      <TimeSpan>
+           <begin>2016-11-13T19:00:00Z</begin>
+           <end>2016-11-13T20:00:00Z</end>
+      </TimeSpan>
+      <styleUrl>#maxv</styleUrl>
+      <visibility>0</visibility>
+      <Polygon>
+       <extrude>1</extrude>
+         <altitudeMode>clampedToGround</altitudeMode>
+       <outerBoundaryIs>
+       <LinearRing>
+       <coordinates>
+        -73.94507,42.62993,00300
+        -73.88396,42.62990,00300
+        -73.88389,42.67487,00300
+        -73.94505,42.67490,00300
+        -73.94507,42.62993,00300
+       </coordinates>
+       </LinearRing>
+       </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+</Folder>
+</Document>
+</kml>

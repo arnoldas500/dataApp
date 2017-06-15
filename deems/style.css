@@ -1,0 +1,497 @@
+.header{
+	background-color: white;
+	width: 100%;
+	height:120px;
+	color:white;
+	text-shadow: 1px 1px purple;
+	text-align: center;
+	margin: 0;
+	border: 0;
+
+}
+
+.nbr{
+	margin: 0;
+	border-radius: 0;
+}
+
+.deems{
+	padding-top:20px;
+	font-size: 20px;
+	color: cyan;
+	margin: 0;
+}
+
+.post-content {
+    bottom:0;
+    left:35%;
+    position: absolute;
+}
+
+.thumbnail{
+    position:relative;
+    
+
+}
+.black
+{
+	background-color: black
+	color:black;
+}
+
+.xciteimg{
+	width:40%;
+	height: 5%;
+	background-color: grey
+}
+
+.content-box{
+	background-color: cyan;
+	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+
+}
+
+.res{
+
+	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 2%;
+	padding-bottom: 30%;
+	background-color: black;
+}
+	
+.layer1
+{
+	
+	float:left;
+	background-color: black;
+	height:400px;
+	width:300px;
+	overflow: auto;
+	overflow-y: hidden;
+
+	
+	}
+
+.layer2
+{
+float:right;
+
+	background-color: black;
+	height:400px;
+	width:300px;
+	overflow:auto;
+	overflow-y: hidden;
+	
+	}
+
+
+
+
+.displaytitle
+{
+	float:right;
+	width:50%;
+	text-shadow: 2px 2px purple;
+	color:orange;
+
+}
+
+.selecttitle
+{
+	float:left;
+	width: 50%;
+	text-shadow: 2px 2px purple;
+	color:orange;
+}
+
+
+.res > h1{
+	color: grey;
+}
+
+body{
+	width: 100%;
+	margin: 0;
+	min-width: 770px;
+
+}
+
+.container{
+min-width:770px;
+background-color: black;
+}
+
+
+.res > p{
+	color: white;
+}
+
+.leftdiv{
+	float:left;
+	width: 50%;
+	
+	padding-right: 4%;
+	padding-left:1.5%;
+	padding-bottom: 5%;
+	margin-bottom: 0;
+
+
+}
+.rightdiv{
+	float:right;
+	width: 50%;
+	padding-left: 4%;
+	padding-right: 1.5%;
+	padding-bottom: 5%;
+	margin-bottom: 0;
+	
+
+}
+
+
+.par{
+	width: 100%;
+	float:left;
+	margin: 0;
+	padding: 0px;
+	height: 340px;
+
+
+
+}
+.par2{
+	width: 100%;
+	float:left;
+	margin: 0;
+	padding: 2px;
+	height: 100px;
+
+
+
+}
+
+.hours{
+	
+	text-align: center;
+	margin-top: 4px;
+	color:black;
+
+}
+#needtoknowimage{
+	padding-top: 2%;
+	padding-bottom: 5%;
+	margin:0;
+	padding: 0;
+
+}
+
+.ntk2{
+	padding-top: 2%;
+	padding-bottom: 5%;
+	margin:0;
+	padding-left: 0px;
+	padding-right: 0px;
+
+}
+
+.cyan{
+	color: cyan;
+}
+
+.white{
+	color: white;
+}
+
+#comenow{
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: black;
+
+}
+
+#contact-me{
+	width:100%;
+	height:500px;
+	text-align: center;
+
+}
+
+#contact-me > h2{
+	color: white;
+}
+
+.formsend{
+	width:70%;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.fullwid{
+	width: 60%;
+}
+
+.halfwid{
+	width: 30%;
+
+
+}
+
+.halfinputs{
+	margin: 0;
+	padding: 0;
+}
+
+.fillclass{
+background-color:rgba(0, 0, 0, 0);
+outline: none;
+
+
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: white;
+  
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: white;
+ 
+}
+
+.lilint{
+	font-size: 30px;
+	color: white;
+}
+
+.int{
+	font-size: 70px;
+	font-weight:800; 
+	color: white;
+}
+
+.thumbnail{
+	padding: 0;
+	margin: 0;
+	border-color: orange;
+
+
+}
+
+h1{
+	font-weight: 1000;
+  color: grey;
+  font-size: 5em;
+
+  
+
+}
+
+.pane {
+    float: right;
+    width: 50%;
+    padding: 20px;
+    background-color: black;
+    
+}
+.custbar{
+	background-color: grey;
+	margin: 0;
+	border: none;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color:white;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	color:cyan;
+	background-color: grey;
+}
+
+.btn{
+	background-color: cyan;
+	color: white;
+}
+
+.ofh{
+		overflow:hidden;
+}
+
+.pend{
+	margin-bottom: 20px;
+}
+
+input[type="text" i]{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	border-radius: 5px;
+	border: 3px solid;
+}
+
+#map {
+		float:right;
+        height: 100%;
+        width: 45%
+
+        right:4px;
+
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html,body  {
+      	width:100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+    
+}
+.half-map {
+  float: left;
+  border-right: 10px white;
+
+height: 500px;
+  width: 48%;
+  background-color: orange;
+}
+
+.half-map-right
+{
+   float: right;
+  height: 500px;
+  width: 50%;
+  background-color: pink;
+}
+.map-control {
+        background-color: #fff;
+        border: 3px solid #ccc;
+        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+        font-family: 'Roboto','sans-serif';
+        margin: 10px;
+        /* Hide the control initially, to prevent it from appearing
+           before the map loads. */
+        display: none;
+      }
+      /* Display the control once it is inside the map. */
+      #map .map-control { display: block; }
+
+      .selector-control {
+        font-size: 14px;
+        line-height: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+
+.marker {
+  width: 27px;
+  height: 27px;
+  font-size: 24px;
+}
+
+#popup {
+  background: bisque;
+}
+
+#myposition > .ol-mouse-position {
+  position: relative;
+  margin-left:20px;
+  font-size: 30px;
+}
+
+.export-geojson {
+  position: absolute;
+  top: 65px;
+  left: 8px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.ol-touch .export-geojson {
+  top: 80px;
+}
+
+.export-geojson a {
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  margin: 1px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+  height: 22px;
+  width: 22px;
+  background: rgba(0,60,136,0.5);
+}
+
+.ol-touch .export-geojson a {
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  line-height: 26px;
+}
+
+.export-geojson a:hover {
+  background: rgba(0,60,136,0.7);
+}
+
+.list-group-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+     .ol-popup {
+        position: absolute;
+        background-color: white;
+        -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #cccccc;
+        bottom: 12px;
+        left: -50px;
+        min-width: 100px;
+      }
+      .ol-popup:after, .ol-popup:before {
+        top: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+      .ol-popup:after {
+        border-top-color: white;
+        border-width: 10px;
+        left: 48px;
+        margin-left: -10px;
+      }
+      .ol-popup:before {
+        border-top-color: #cccccc;
+        border-width: 11px;
+        left: 48px;
+        margin-left: -11px;
+      }
+      .ol-popup-closer {
+        text-decoration: none;
+        position: absolute;
+        top: 2px;
+        right: 8px;
+      }
+      .ol-popup-closer:before {
+        content: "x";
+      }

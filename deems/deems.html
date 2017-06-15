@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>DEEMS ASRC</title>
+
+  <meta name="description" content="DEEM">
+  <meta name="author" content="Adam">
+    
+    <!--jquery stuff/ol-->
+     <link rel="stylesheet" href="js/OpenLayers/v3.20.1/css/ol.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" type="text/css"/>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
+  <link rel="stylesheet" href=" style.css">
+
+  <!--from my deems plain site-->
+     
+
+     <!--for openlayers-->
+     <link rel="stylesheet" href="js/OpenLayers/v3.20.1/css/ol.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" type="text/css"/>
+
+  
+</head>
+
+<body>
+
+<div class="par container-fluid ofh" >
+<div  class='leftdiv  col-xs-6' id="selemap" class="half-map">
+
+        <div id="popup" class="ol-popup">
+            <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+            <div id="popup-content"></div>
+        </div>
+    </div>
+      <div  class='rightdiv  col-xs-6' id="dispmap" class="half-map-right"></div>
+</div>
+<div id="pane" class='res'  >
+
+
+              <input class='hours' type="number" id="simhr" min="1" max="23" value="1"><h5>(1 <= Hour <= 23)</h5>
+
+
+              <div class= 'layer1' >
+              <h5>Layer 1 (0-150m) Visibility</h5>
+               <div id="l1-slider"></div><p id="l1-opacity">100%</p>
+               <img class= "legend1" id="legend1"  alt="legend1" />
+              </div>
+              <div class = 'layer2'>
+              <h5>Layer 2 (150-300m) Visibility</h5>
+               <div id="l2-slider"></div><p id="l2-opacity">100%</p>
+               <img class= "legend2" id="legend2"  alt="legend2" />
+              </div>
+              </div>
+</div>
+
+
+  <script src="js/OpenLayers/v3.20.1/build/ol.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.js"></script>
+     <!-- Latest compiled and minified JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    
+    <script src="js/disp/sMap.js"></script>
+    <script src="js/disp/dMap.js"></script>
+    <script src="js/disp/layer-opacity.js"></script>
+    <script src="js/layers.js"></script>
+
+
+
+<div  class='par2'>
+	<div class='ntk2 container-fluid col-xs-6 '>
+	
+    
+</div>
+</div>
+
+</div>
+
+<div><p class='white col-xs-12' id='comenow'>Contact me to know more about my research<p></div>
+
+
+
+
+</body>
+</html>

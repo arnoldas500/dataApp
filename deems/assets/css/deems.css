@@ -1,0 +1,42 @@
+
+
+
+
+.ctrl {
+    top:6%;
+    position: absolute;
+    height: 120px;
+    width: 100%;
+
+    background: black;
+    border-bottom: 5px solid lightsteelblue;
+    box-sizing: border-box;
+    /*padding: 0 20px;*/
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+
+
+
+
+.map {
+  height: 100px;
+  width: 100%;
+  background-color: #b5d0d0;
+}
+
+.mapbox {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    background-color: green;
+
+
+}
+
+
+
+

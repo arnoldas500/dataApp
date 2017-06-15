@@ -1,0 +1,844 @@
+ Simulation Date (CCYYMMDD): 20170404
+ Simulation Time (HHMMSS.S): 194808.508
+ 
+   KG   KT DATA  SIZE   NX   NY
+    1    1 AWRF  15.0  143  143
+ 
+  NOTICE   main: number meteo grids and times -            1           1
+  
+ HYSPLIT4
+ Last Changed Rev: 837
+ Last Changed Date: 2016-10-06 09:58:46 -0400 (Thu, 06 Oct 2016)
+ 
+ ------------- Start Namelist configuration -------------------
+ Internal grid parameters (nlvl,aa,bb,cc):           33   10.00000      -10.00000       10.00000    
+&SETUP
+ INITD=          0,
+ KHMAX=       9999,
+ NUMPAR=       2500,
+ MAXPAR=      10000,
+ MAXDIM=          1,
+ QCYCLE=  0.000000    ,
+ P10F=  1.000000    ,
+ KMIXD=          0,
+ KMIX0=        250,
+ FRME= 0.1000000    ,
+ FRMR=  0.000000    ,
+ KRND=          6,
+ DELT=  0.000000    ,
+ KDEF=          0,
+ TKERD= 0.1800000    ,
+ TKERN= 0.1800000    ,
+ NDUMP=          0,
+ NCYCL=          0,
+ TRATIO= 0.7500000    ,
+ ISOT=        -99,
+ MGMIN=         10,
+ KMSL=          0,
+ NSTR=          0,
+ MHRS=          0,
+ NVER=          0,
+ CPACK=          1,
+ CMASS=          0,
+ ICHEM=          0,
+ EFILE=                                                                                ,
+ VSCALE=  200.0000    ,
+ VSCALES=  200.0000    ,
+ VSCALEU=  200.0000    ,
+ K10M=          1,
+ VDIST=VMSDIST                                                                         ,
+ KHINP=          0,
+ PINBC=PARINBC                                                                         ,
+ TOUT=          0,
+ TM_PRES=          0,
+ TM_TPOT=          0,
+ TM_TAMB=          0,
+ TM_RAIN=          0,
+ TM_MIXD=          0,
+ TM_TERR=          0,
+ HSCALE=  10800.00    ,
+ TM_DSWF=          0,
+ TM_RELH=          0,
+ TM_SPHU=          0,
+ TM_MIXR=          0,
+ DXF=  1.000000    ,
+ DYF=  1.000000    ,
+ DZF= 9.9999998E-03,
+ PINPF=PARINIT                                                                         ,
+ POUTF=PARDUMP                                                                         ,
+ NINIT=          1,
+ KAGL=          0,
+ KPUFF=          0,
+ KBLT=          0,
+ KZMIX=          0,
+ TVMIX=  1.000000    ,
+ KBLS=          1,
+ CONAGE=         48,
+ KSPL=          1,
+ FRHS=  1.000000    ,
+ FRVS= 9.9999998E-03,
+ FRTS= 0.1000000    ,
+ FRHMAX=  3.000000    ,
+ SPLITF=  1.000000    ,
+ MESSG=MESSAGE                                                                         ,
+ NBPTYP=          1,
+ RHB=         80,
+ RHT=         60,
+ OUTDT=          0,
+ DECAY=          1,
+ KWET=          1,
+ KRAND=          2,
+ CAPEMIN= -1.000000    ,  /
+
+ ------------- End Namelist configuration -------------------
+  
+  NOTICE   main: pollutant initialization flags
+       Gas pollutant -  T
+      Dry deposition -  T
+  NOTICE   main: meteorological data flags
+     Ten meter wind -  T
+     Two meter temp -  T
+     Exchange coeff -  F
+          Heat flux -  T
+      Momentum flux -  F
+  Velocity variance -  F
+       3D TKE field -  F
+     Down shortwave -  T
+  Friction velocity -  T
+      Friction temp -  F
+     Terrain height -  T
+   Surface pressure -  T
+  Mixed layer depth -  T
+  Convective mixing -  F
+  Profile averaging -            0
+   Stability method -            1
+  Horizontal mixing -            0
+  PBL mixing scheme -            2
+   Free Trop Mixing -    1.000000    
+  Precip accumulate -           60
+ ------------- Start computation messages -------------------
+  NOTICE advrng: (kg ,xyr,xy1) -  1   14   14   77   70
+  NOTICE metpos: (mtime,ftime) -     61467540           0
+  NOTICE metpos: (mtime,ftime) -     61467600           0
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   14   14   33
+  NOTICE sfcinp: reading ASCDATA.CFG
+  NOTICE sfcinp: record terminator = CR/LF
+  NOTICE metgrd: (kg, xyr,xy1) -     1   14   14   77   70
+  NOTICE metinp: AWRF 1 2493   14   14   77   70 61467540 16 11 13 19
+  NOTICE metinp: AWRF 1 2849   14   14   77   70 61467600 16 11 13 20
+  NOTICE advrng: (kg ,xyr,xy1) -  1   14   14   77   70
+  NOTICE   main: Initial time step (min)            3
+  NOTICE emspnt: emissions started
+  NOTICE   main:            1    61467543         125   2482.548    
+  NOTICE   main:            1    61467546         250   4957.586    
+  NOTICE   main:            1    61467549         375   7420.846    
+  NOTICE   main:            1    61467552         500   9866.081    
+  NOTICE   main:            1    61467555         625   12310.06    
+  NOTICE   main:            1    61467558         750   14746.39    
+  NOTICE   main:            1    61467561         875   17180.55    
+  NOTICE   main:            1    61467564        1000   19604.16    
+  NOTICE   main:            1    61467567        1125   22023.30    
+  NOTICE   main:            1    61467570        1250   24445.34    
+  NOTICE   main:            1    61467573        1375   26869.07    
+  NOTICE   main:            1    61467576        1500   29277.07    
+  NOTICE   main:            1    61467579        1625   31679.52    
+  NOTICE   main:            1    61467582        1750   34076.07    
+  NOTICE   main:            1    61467585        1875   36477.67    
+  NOTICE   main:            1    61467588        2000   38865.92    
+  NOTICE   main:            1    61467591        2125   41250.43    
+  NOTICE   main:            1    61467594        2250   43639.16    
+  NOTICE   main:            1    61467597        2375   46014.71    
+  NOTICE condsk:  1 output at   11  13  20   0
+  NOTICE   main:            1    61467600        2500   48386.03    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   14   14   78   70
+  NOTICE emspnt: emissions terminated
+  NOTICE metpos: (mtime,ftime) -     61467660    61467540
+  NOTICE metinp: AWRF 1 3205   14   14   77   70 61467660 16 11 13 21
+  NOTICE   main:            2    61467603        2500   48269.82    
+  NOTICE   main:            2    61467606        2500   48170.88    
+  NOTICE   main:            2    61467609        2500   48080.52    
+  NOTICE   main:            2    61467612        2500   48002.14    
+  NOTICE   main:            2    61467615        2500   47922.61    
+  NOTICE   main:            2    61467618        2500   47844.60    
+  NOTICE   main:            2    61467621        2500   47772.46    
+  NOTICE   main:            2    61467624        2500   47702.13    
+  NOTICE   main:            2    61467627        2500   47636.11    
+  NOTICE   main:            2    61467630        2500   47570.99    
+  NOTICE   main:            2    61467633        2500   47504.95    
+  NOTICE   main:            2    61467636        2500   47442.85    
+  NOTICE   main:            2    61467639        2500   47384.54    
+  NOTICE   main:            2    61467642        2500   47319.92    
+  NOTICE   main:            2    61467645        2500   47261.83    
+  NOTICE   main:            2    61467648        2500   47210.38    
+  NOTICE   main:            2    61467651        2500   47162.16    
+  NOTICE   main:            2    61467654        2500   47107.11    
+  NOTICE   main:            2    61467657        2500   47051.99    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   14   14   78   70 shift
+  NOTICE metsub: (kg ,xyr,xy1) -     1   21   21   75   67 expand
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   21   21   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   21   21   75   67
+  NOTICE metinp: AWRF 1 2849   21   21   75   67 61467600 16 11 13 20
+  NOTICE metinp: AWRF 1 3205   21   21   75   67 61467660 16 11 13 21
+  NOTICE condsk:  1 output at   11  13  21   0
+  NOTICE   main:            2    61467660        2500   46998.67    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   21   21   76   65
+  NOTICE metpos: (mtime,ftime) -     61467720    61467600
+  NOTICE metinp: AWRF 1 3561   21   21   75   67 61467720 16 11 13 22
+  NOTICE   main:            3    61467663        2500   46939.43    
+  NOTICE   main:            3    61467666        2500   46882.89    
+  NOTICE   main:            3    61467669        2500   46828.96    
+  NOTICE   main:            3    61467672        2500   46776.88    
+  NOTICE   main:            3    61467675        2500   46727.34    
+  NOTICE   main:            3    61467678        2500   46677.83    
+  NOTICE   main:            3    61467681        2500   46632.86    
+  NOTICE   main:            3    61467684        2500   46590.69    
+  NOTICE   main:            3    61467687        2500   46543.76    
+  NOTICE   main:            3    61467690        2500   46493.08    
+  NOTICE   main:            3    61467693        2500   46447.97    
+  NOTICE   main:            3    61467696        2500   46400.28    
+  NOTICE   main:            3    61467699        2500   46353.61    
+  NOTICE   main:            3    61467702        2500   46305.98    
+  NOTICE   main:            3    61467705        2500   46259.70    
+  NOTICE   main:            3    61467708        2500   46214.59    
+  NOTICE   main:            3    61467711        2500   46164.50    
+  NOTICE   main:            3    61467714        2500   46116.04    
+  NOTICE   main:            3    61467717        2500   46066.32    
+  NOTICE condsk:  1 output at   11  13  22   0
+  NOTICE   main:            3    61467720        2500   46014.71    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   21   21   78   65
+  NOTICE metpos: (mtime,ftime) -     61467780    61467660
+  NOTICE metinp: AWRF 1 3917   21   21   75   67 61467780 16 11 13 23
+  NOTICE   main:            4    61467723        2500   45957.25    
+  NOTICE   main:            4    61467726        2500   45900.52    
+  NOTICE   main:            4    61467729        2500   45845.60    
+  NOTICE   main:            4    61467732        2500   45784.42    
+  NOTICE   main:            4    61467735        2500   45715.52    
+  NOTICE   main:            4    61467738        2500   45648.56    
+  NOTICE   main:            4    61467741        2500   45583.42    
+  NOTICE   main:            4    61467744        2500   45518.48    
+  NOTICE   main:            4    61467747        2500   45451.15    
+  NOTICE   main:            4    61467750        2500   45381.57    
+  NOTICE   main:            4    61467753        2500   45310.35    
+  NOTICE   main:            4    61467756        2500   45237.54    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   21   21   78   65 shift
+  NOTICE metgrd: (kg, xyr,xy1) -     1   21   21   78   65
+  NOTICE metinp: AWRF 1 3561   21   21   78   65 61467720 16 11 13 22
+  NOTICE metinp: AWRF 1 3917   21   21   78   65 61467780 16 11 13 23
+  NOTICE   main:            4    61467759        2500   45160.65    
+  NOTICE   main:            4    61467762        2500   45075.45    
+  NOTICE   main:            4    61467765        2500   44989.65    
+  NOTICE   main:            4    61467768        2500   44906.61    
+  NOTICE   main:            4    61467771        2500   44824.58    
+  NOTICE   main:            4    61467774        2500   44739.48    
+  NOTICE   main:            4    61467777        2500   44651.52    
+  NOTICE condsk:  1 output at   11  13  23   0
+  NOTICE   main:            4    61467780        2500   44559.18    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   25   22   77   64
+  NOTICE metpos: (mtime,ftime) -     61467840    61467720
+  NOTICE metinp: AWRF 1 4273   21   21   78   65 61467840 16 11 14  0
+  NOTICE   main:            5    61467783        2500   44464.47    
+  NOTICE   main:            5    61467786        2500   44372.95    
+  NOTICE   main:            5    61467789        2500   44281.16    
+  NOTICE   main:            5    61467792        2500   44183.90    
+  NOTICE   main:            5    61467795        2500   44082.44    
+  NOTICE   main:            5    61467798        2500   43976.92    
+  NOTICE   main:            5    61467801        2500   43873.94    
+  NOTICE   main:            5    61467804        2500   43771.95    
+  NOTICE   main:            5    61467807        2500   43672.34    
+  NOTICE   main:            5    61467810        2500   43573.48    
+  NOTICE   main:            5    61467813        2500   43471.57    
+  NOTICE   main:            5    61467816        2500   43366.37    
+  NOTICE   main:            5    61467819        2500   43264.90    
+  NOTICE   main:            5    61467822        2500   43164.06    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   25   22   77   64 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   25   22   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   25   22   77   64
+  NOTICE metinp: AWRF 1 3917   25   22   77   64 61467780 16 11 13 23
+  NOTICE metinp: AWRF 1 4273   25   22   77   64 61467840 16 11 14  0
+  NOTICE   main:            5    61467825        2500   43064.85    
+  NOTICE   main:            5    61467828        2500   42968.43    
+  NOTICE   main:            5    61467831        2500   42881.72    
+  NOTICE   main:            5    61467834        2500   42787.25    
+  NOTICE   main:            5    61467837        2500   42694.73    
+  NOTICE condsk:  1 output at   11  14   0   0
+  NOTICE   main:            5    61467840        2500   42604.27    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   27   25   78   63
+  NOTICE metpos: (mtime,ftime) -     61467900    61467780
+  NOTICE metinp: AWRF 1 4629   25   22   77   64 61467900 16 11 14  1
+  NOTICE   main:            6    61467842        2500   42545.03    
+  NOTICE   main:            6    61467844        2500   42486.89    
+  NOTICE   main:            6    61467846        2500   42428.11    
+  NOTICE   main:            6    61467848        2500   42368.66    
+  NOTICE   main:            6    61467850        2500   42309.50    
+  NOTICE   main:            6    61467852        2500   42250.16    
+  NOTICE   main:            6    61467854        2500   42191.03    
+  NOTICE   main:            6    61467856        2500   42131.79    
+  NOTICE   main:            6    61467858        2500   42073.06    
+  NOTICE   main:            6    61467860        2500   42014.51    
+  NOTICE   main:            6    61467862        2500   41959.22    
+  NOTICE   main:            6    61467864        2500   41903.27    
+  NOTICE   main:            6    61467866        2500   41848.40    
+  NOTICE   main:            6    61467868        2500   41793.64    
+  NOTICE   main:            6    61467870        2500   41737.53    
+  NOTICE   main:            6    61467872        2500   41679.36    
+  NOTICE   main:            6    61467874        2500   41619.30    
+  NOTICE   main:            6    61467876        2500   41563.00    
+  NOTICE   main:            6    61467878        2500   41506.66    
+  NOTICE   main:            6    61467880        2500   41450.82    
+  NOTICE   main:            6    61467882        2500   41395.39    
+  NOTICE   main:            6    61467884        2500   41339.97    
+  NOTICE   main:            6    61467886        2500   41285.81    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   27   25   78   63 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   27   25   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   27   25   78   63
+  NOTICE metinp: AWRF 1 4273   27   25   78   63 61467840 16 11 14  0
+  NOTICE metinp: AWRF 1 4629   27   25   78   63 61467900 16 11 14  1
+  NOTICE   main:            6    61467888        2500   41232.06    
+  NOTICE   main:            6    61467890        2500   41175.57    
+  NOTICE   main:            6    61467892        2500   41116.04    
+  NOTICE   main:            6    61467894        2500   41060.61    
+  NOTICE   main:            6    61467896        2500   41005.51    
+  NOTICE   main:            6    61467898        2500   40949.77    
+  NOTICE condsk:  1 output at   11  14   1   0
+  NOTICE   main:            6    61467900        2500   40893.20    
+                                                        Index  Height %Mass
+                                                           12  1330.0  0.33
+                                                           11  1110.0  4.96
+                                                           10   910.0  6.74
+                                                            9   730.0  8.47
+                                                            8   570.0 10.70
+                                                            7   430.0 12.12
+                                                            6   310.0 13.13
+                                                            5   210.0 12.79
+                                                            4   130.0 12.64
+                                                            3    70.0  8.49
+                                                            2    30.0  5.81
+                                                            1    10.0  3.82
+  NOTICE advrng: (kg ,xyr,xy1) -  1   30   27   78   62
+  NOTICE metpos: (mtime,ftime) -     61467960    61467840
+  NOTICE metinp: AWRF 1 4985   27   25   78   63 61467960 16 11 14  2
+  NOTICE   main:            7    61467902        2500   40836.01    
+  NOTICE   main:            7    61467904        2500   40780.16    
+  NOTICE   main:            7    61467906        2500   40724.10    
+  NOTICE   main:            7    61467908        2500   40672.11    
+  NOTICE   main:            7    61467910        2500   40615.58    
+  NOTICE   main:            7    61467912        2500   40557.82    
+  NOTICE   main:            7    61467914        2500   40501.55    
+  NOTICE   main:            7    61467916        2500   40447.20    
+  NOTICE   main:            7    61467918        2500   40394.01    
+  NOTICE   main:            7    61467920        2500   40339.87    
+  NOTICE   main:            7    61467922        2500   40285.75    
+  NOTICE   main:            7    61467924        2500   40229.73    
+  NOTICE   main:            7    61467926        2500   40174.22    
+  NOTICE   main:            7    61467928        2500   40117.73    
+  NOTICE   main:            7    61467930        2500   40063.91    
+  NOTICE   main:            7    61467932        2500   40009.61    
+  NOTICE   main:            7    61467934        2500   39955.80    
+  NOTICE   main:            7    61467936        2500   39899.43    
+  NOTICE   main:            7    61467938        2500   39839.77    
+  NOTICE   main:            7    61467940        2500   39785.59    
+  NOTICE   main:            7    61467942        2500   39728.92    
+  NOTICE   main:            7    61467944        2500   39672.22    
+  NOTICE   main:            7    61467946        2500   39613.55    
+  NOTICE   main:            7    61467948        2500   39556.80    
+  NOTICE   main:            7    61467950        2500   39502.25    
+  NOTICE   main:            7    61467952        2500   39448.30    
+  NOTICE   main:            7    61467954        2500   39394.80    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   30   27   78   62 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   30   27   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   30   27   78   62
+  NOTICE metinp: AWRF 1 4629   30   27   78   62 61467900 16 11 14  1
+  NOTICE metinp: AWRF 1 4985   30   27   78   62 61467960 16 11 14  2
+  NOTICE   main:            7    61467956        2500   39344.04    
+  NOTICE   main:            7    61467958        2500   39292.44    
+  NOTICE condsk:  1 output at   11  14   2   0
+  NOTICE   main:            7    61467960        2500   39244.00    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   32   29   79   61
+  NOTICE metpos: (mtime,ftime) -     61468020    61467900
+  NOTICE metinp: AWRF 1 5341   30   27   78   62 61468020 16 11 14  3
+  NOTICE   main:            8    61467962        2500   39191.63    
+  NOTICE   main:            8    61467964        2500   39138.01    
+  NOTICE   main:            8    61467966        2500   39085.00    
+  NOTICE   main:            8    61467968        2500   39030.50    
+  NOTICE   main:            8    61467970        2500   38977.34    
+  NOTICE   main:            8    61467972        2500   38926.51    
+  NOTICE   main:            8    61467974        2500   38873.38    
+  NOTICE   main:            8    61467976        2500   38819.40    
+  NOTICE   main:            8    61467978        2500   38763.71    
+  NOTICE   main:            8    61467980        2500   38709.47    
+  NOTICE   main:            8    61467982        2500   38658.05    
+  NOTICE   main:            8    61467984        2500   38602.82    
+  NOTICE   main:            8    61467986        2500   38548.96    
+  NOTICE   main:            8    61467988        2500   38497.66    
+  NOTICE   main:            8    61467990        2500   38448.32    
+  NOTICE   main:            8    61467992        2500   38393.50    
+  NOTICE   main:            8    61467994        2500   38339.55    
+  NOTICE   main:            8    61467996        2500   38285.03    
+  NOTICE   main:            8    61467998        2500   38231.45    
+  NOTICE   main:            8    61468000        2500   38178.64    
+  NOTICE   main:            8    61468002        2500   38129.45    
+  NOTICE   main:            8    61468004        2500   38080.79    
+  NOTICE   main:            8    61468006        2500   38029.75    
+  NOTICE   main:            8    61468008        2500   37977.02    
+  NOTICE   main:            8    61468010        2500   37926.60    
+  NOTICE   main:            8    61468012        2500   37877.14    
+  NOTICE   main:            8    61468014        2500   37829.08    
+  NOTICE   main:            8    61468016        2500   37783.41    
+  NOTICE   main:            8    61468018        2500   37734.64    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   32   29   79   61 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   32   29   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   32   29   79   61
+  NOTICE metinp: AWRF 1 4985   32   29   79   61 61467960 16 11 14  2
+  NOTICE metinp: AWRF 1 5341   32   29   79   61 61468020 16 11 14  3
+  NOTICE condsk:  1 output at   11  14   3   0
+  NOTICE   main:            8    61468020        2500   37683.85    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   34   31   80   61
+  NOTICE metpos: (mtime,ftime) -     61468080    61467960
+  NOTICE metinp: AWRF 1 5697   32   29   79   61 61468080 16 11 14  4
+  NOTICE   main:            9    61468023        2500   37611.47    
+  NOTICE   main:            9    61468026        2500   37533.58    
+  NOTICE   main:            9    61468029        2500   37460.97    
+  NOTICE   main:            9    61468032        2500   37387.76    
+  NOTICE   main:            9    61468035        2500   37311.01    
+  NOTICE   main:            9    61468038        2500   37242.21    
+  NOTICE   main:            9    61468041        2500   37172.21    
+  NOTICE   main:            9    61468044        2500   37101.10    
+  NOTICE   main:            9    61468047        2500   37033.19    
+  NOTICE   main:            9    61468050        2500   36966.05    
+  NOTICE   main:            9    61468053        2500   36897.89    
+  NOTICE   main:            9    61468056        2500   36829.07    
+  NOTICE   main:            9    61468059        2500   36762.68    
+  NOTICE   main:            9    61468062        2500   36694.66    
+  NOTICE   main:            9    61468065        2500   36629.64    
+  NOTICE   main:            9    61468068        2500   36561.54    
+  NOTICE   main:            9    61468071        2500   36496.43    
+  NOTICE   main:            9    61468074        2500   36434.57    
+  NOTICE   main:            9    61468077        2500   36365.93    
+  NOTICE condsk:  1 output at   11  14   4   0
+  NOTICE   main:            9    61468080        2500   36305.08    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   34   33   81   60
+  NOTICE metpos: (mtime,ftime) -     61468140    61468020
+  NOTICE metinp: AWRF 1 6053   32   29   79   61 61468140 16 11 14  5
+  NOTICE   main:           10    61468083        2500   36241.63    
+  NOTICE   main:           10    61468086        2500   36175.55    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   34   33   81   60 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   34   33   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   34   33   81   60
+  NOTICE metinp: AWRF 1 5697   34   33   81   60 61468080 16 11 14  4
+  NOTICE metinp: AWRF 1 6053   34   33   81   60 61468140 16 11 14  5
+  NOTICE   main:           10    61468089        2500   36112.04    
+  NOTICE   main:           10    61468092        2500   36045.13    
+  NOTICE   main:           10    61468095        2500   35978.65    
+  NOTICE   main:           10    61468098        2500   35918.03    
+  NOTICE   main:           10    61468101        2500   35861.34    
+  NOTICE   main:           10    61468104        2500   35805.36    
+  NOTICE   main:           10    61468107        2500   35745.31    
+  NOTICE   main:           10    61468110        2500   35692.24    
+  NOTICE   main:           10    61468113        2500   35639.63    
+  NOTICE   main:           10    61468116        2500   35586.09    
+  NOTICE   main:           10    61468119        2500   35534.12    
+  NOTICE   main:           10    61468122        2500   35477.25    
+  NOTICE   main:           10    61468125        2500   35425.14    
+  NOTICE   main:           10    61468128        2500   35372.90    
+  NOTICE   main:           10    61468131        2500   35315.34    
+  NOTICE   main:           10    61468134        2500   35261.41    
+  NOTICE   main:           10    61468137        2500   35208.24    
+  NOTICE condsk:  1 output at   11  14   5   0
+  NOTICE   main:           10    61468140        2500   35155.42    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   34   33   84   60
+  NOTICE metpos: (mtime,ftime) -     61468200    61468080
+  NOTICE metinp: AWRF 1 6409   34   33   81   60 61468200 16 11 14  6
+  NOTICE   main:           11    61468143        2500   35105.21    
+  NOTICE   main:           11    61468146        2500   35051.75    
+  NOTICE   main:           11    61468149        2500   34998.46    
+  NOTICE   main:           11    61468152        2500   34946.22    
+  NOTICE   main:           11    61468155        2500   34897.58    
+  NOTICE   main:           11    61468158        2500   34846.97    
+  NOTICE   main:           11    61468161        2500   34796.95    
+  NOTICE   main:           11    61468164        2500   34748.14    
+  NOTICE   main:           11    61468167        2500   34697.37    
+  NOTICE   main:           11    61468170        2500   34646.40    
+  NOTICE   main:           11    61468173        2500   34596.98    
+  NOTICE   main:           11    61468176        2500   34549.19    
+  NOTICE   main:           11    61468179        2500   34505.05    
+  NOTICE   main:           11    61468182        2500   34460.14    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   34   33   84   60 shift
+  NOTICE metgrd: (kg, xyr,xy1) -     1   34   33   84   60
+  NOTICE metinp: AWRF 1 6053   34   33   84   60 61468140 16 11 14  5
+  NOTICE metinp: AWRF 1 6409   34   33   84   60 61468200 16 11 14  6
+  NOTICE   main:           11    61468185        2500   34414.64    
+  NOTICE   main:           11    61468188        2500   34365.99    
+  NOTICE   main:           11    61468191        2500   34318.45    
+  NOTICE   main:           11    61468194        2500   34272.32    
+  NOTICE   main:           11    61468197        2500   34225.98    
+  NOTICE condsk:  1 output at   11  14   6   0
+  NOTICE   main:           11    61468200        2500   34180.65    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   35   33   85   61
+  NOTICE metpos: (mtime,ftime) -     61468260    61468140
+  NOTICE metinp: AWRF 1 6765   34   33   84   60 61468260 16 11 14  7
+  NOTICE   main:           12    61468203        2500   34133.09    
+  NOTICE   main:           12    61468206        2500   34084.85    
+  NOTICE   main:           12    61468209        2500   34034.03    
+  NOTICE   main:           12    61468212        2500   33981.68    
+  NOTICE   main:           12    61468215        2500   33931.89    
+  NOTICE   main:           12    61468218        2500   33882.04    
+  NOTICE   main:           12    61468221        2500   33836.88    
+  NOTICE   main:           12    61468224        2500   33787.22    
+  NOTICE   main:           12    61468227        2500   33739.30    
+  NOTICE   main:           12    61468230        2500   33691.86    
+  NOTICE   main:           12    61468233        2500   33644.13    
+  NOTICE   main:           12    61468236        2500   33591.24    
+  NOTICE   main:           12    61468239        2500   33544.94    
+  NOTICE   main:           12    61468242        2500   33499.18    
+  NOTICE   main:           12    61468245        2500   33448.47    
+  NOTICE   main:           12    61468248        2500   33401.53    
+  NOTICE   main:           12    61468251        2500   33357.10    
+  NOTICE   main:           12    61468254        2500   33305.39    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   35   33   85   61 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   35   33   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   35   33   85   61
+  NOTICE metinp: AWRF 1 6409   35   33   85   61 61468200 16 11 14  6
+  NOTICE metinp: AWRF 1 6765   35   33   85   61 61468260 16 11 14  7
+  NOTICE   main:           12    61468257        2500   33256.60    
+  NOTICE condsk:  1 output at   11  14   7   0
+  NOTICE   main:           12    61468260        2500   33208.52    
+                                                        Index  Height %Mass
+                                                           12  1330.0  0.23
+                                                           11  1110.0  4.59
+                                                           10   910.0 10.22
+                                                            9   730.0 11.70
+                                                            8   570.0 14.59
+                                                            7   430.0 13.63
+                                                            6   310.0 11.17
+                                                            5   210.0 11.20
+                                                            4   130.0  9.00
+                                                            3    70.0  7.23
+                                                            2    30.0  4.37
+                                                            1    10.0  2.08
+  NOTICE advrng: (kg ,xyr,xy1) -  1   38   34   85   61
+  NOTICE metpos: (mtime,ftime) -     61468320    61468200
+  NOTICE metinp: AWRF 1 7121   35   33   85   61 61468320 16 11 14  8
+  NOTICE   main:           13    61468263        2500   33162.61    
+  NOTICE   main:           13    61468266        2500   33119.32    
+  NOTICE   main:           13    61468269        2500   33073.76    
+  NOTICE   main:           13    61468272        2500   33026.52    
+  NOTICE   main:           13    61468275        2500   32978.58    
+  NOTICE   main:           13    61468278        2500   32933.02    
+  NOTICE   main:           13    61468281        2500   32888.11    
+  NOTICE   main:           13    61468284        2500   32844.13    
+  NOTICE   main:           13    61468287        2500   32801.86    
+  NOTICE   main:           13    61468290        2500   32756.17    
+  NOTICE   main:           13    61468293        2500   32708.68    
+  NOTICE   main:           13    61468296        2500   32661.99    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   38   34   85   61 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   38   34   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   38   34   85   61
+  NOTICE metinp: AWRF 1 6765   38   34   85   61 61468260 16 11 14  7
+  NOTICE metinp: AWRF 1 7121   38   34   85   61 61468320 16 11 14  8
+  NOTICE   main:           13    61468299        2500   32617.08    
+  NOTICE   main:           13    61468302        2500   32570.47    
+  NOTICE   main:           13    61468305        2500   32521.66    
+  NOTICE   main:           13    61468308        2500   32476.27    
+  NOTICE   main:           13    61468311        2500   32432.12    
+  NOTICE   main:           13    61468314        2500   32386.35    
+  NOTICE   main:           13    61468317        2500   32345.86    
+  NOTICE condsk:  1 output at   11  14   8   0
+  NOTICE   main:           13    61468320        2500   32301.53    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   40   34   85   62
+  NOTICE metpos: (mtime,ftime) -     61468380    61468260
+  NOTICE metinp: AWRF 1 7477   38   34   85   61 61468380 16 11 14  9
+  NOTICE   main:           14    61468323        2500   32258.60    
+  NOTICE   main:           14    61468326        2500   32212.77    
+  NOTICE   main:           14    61468329        2500   32167.46    
+  NOTICE   main:           14    61468332        2500   32126.40    
+  NOTICE   main:           14    61468335        2500   32085.82    
+  NOTICE   main:           14    61468338        2500   32044.67    
+  NOTICE   main:           14    61468341        2500   32001.50    
+  NOTICE   main:           14    61468344        2500   31958.92    
+  NOTICE   main:           14    61468347        2500   31916.39    
+  NOTICE   main:           14    61468350        2500   31869.81    
+  NOTICE   main:           14    61468353        2500   31826.08    
+  NOTICE   main:           14    61468356        2500   31783.94    
+  NOTICE   main:           14    61468359        2500   31740.21    
+  NOTICE   main:           14    61468362        2500   31700.34    
+  NOTICE   main:           14    61468365        2500   31660.62    
+  NOTICE   main:           14    61468368        2500   31620.85    
+  NOTICE   main:           14    61468371        2500   31584.44    
+  NOTICE   main:           14    61468374        2500   31547.04    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   40   34   85   62 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   40   34   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   40   34   85   62
+  NOTICE metinp: AWRF 1 7121   40   34   85   62 61468320 16 11 14  8
+  NOTICE metinp: AWRF 1 7477   40   34   85   62 61468380 16 11 14  9
+  NOTICE   main:           14    61468377        2500   31506.25    
+  NOTICE condsk:  1 output at   11  14   9   0
+  NOTICE   main:           14    61468380        2500   31466.59    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   44   36   84   61
+  NOTICE metpos: (mtime,ftime) -     61468440    61468320
+  NOTICE metinp: AWRF 1 7833   40   34   85   62 61468440 16 11 14 10
+  NOTICE   main:           15    61468383        2500   31427.97    
+  NOTICE   main:           15    61468386        2500   31390.49    
+  NOTICE   main:           15    61468389        2500   31353.53    
+  NOTICE   main:           15    61468392        2500   31314.11    
+  NOTICE   main:           15    61468395        2500   31274.89    
+  NOTICE   main:           15    61468398        2500   31235.67    
+  NOTICE   main:           15    61468401        2500   31194.22    
+  NOTICE   main:           15    61468404        2500   31154.03    
+  NOTICE   main:           15    61468407        2500   31111.39    
+  NOTICE   main:           15    61468410        2500   31074.25    
+  NOTICE   main:           15    61468413        2500   31036.61    
+  NOTICE   main:           15    61468416        2500   30995.06    
+  NOTICE   main:           15    61468419        2500   30954.87    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   44   36   84   61 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   44   36   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   44   36   84   61
+  NOTICE metinp: AWRF 1 7477   44   36   84   61 61468380 16 11 14  9
+  NOTICE metinp: AWRF 1 7833   44   36   84   61 61468440 16 11 14 10
+  NOTICE   main:           15    61468422        2500   30912.41    
+  NOTICE   main:           15    61468425        2500   30875.04    
+  NOTICE   main:           15    61468428        2500   30837.45    
+  NOTICE   main:           15    61468431        2500   30802.28    
+  NOTICE   main:           15    61468434        2500   30764.21    
+  NOTICE   main:           15    61468437        2500   30722.11    
+  NOTICE condsk:  1 output at   11  14  10   0
+  NOTICE   main:           15    61468440        2500   30680.18    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   45   36   86   62
+  NOTICE metpos: (mtime,ftime) -     61468500    61468380
+  NOTICE metinp: AWRF 1 8189   44   36   84   61 61468500 16 11 14 11
+  NOTICE   main:           16    61468443        2500   30637.12    
+  NOTICE   main:           16    61468446        2500   30595.83    
+  NOTICE   main:           16    61468449        2500   30555.30    
+  NOTICE   main:           16    61468452        2500   30511.02    
+  NOTICE   main:           16    61468455        2500   30471.75    
+  NOTICE   main:           16    61468458        2500   30430.64    
+  NOTICE   main:           16    61468461        2500   30391.64    
+  NOTICE   main:           16    61468464        2500   30352.31    
+  NOTICE   main:           16    61468467        2500   30312.28    
+  NOTICE   main:           16    61468470        2500   30273.92    
+  NOTICE   main:           16    61468473        2500   30237.18    
+  NOTICE   main:           16    61468476        2500   30202.51    
+  NOTICE   main:           16    61468479        2500   30165.43    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   45   36   86   62 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   45   36   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   45   36   86   62
+  NOTICE metinp: AWRF 1 7833   45   36   86   62 61468440 16 11 14 10
+  NOTICE metinp: AWRF 1 8189   45   36   86   62 61468500 16 11 14 11
+  NOTICE   main:           16    61468482        2500   30129.28    
+  NOTICE   main:           16    61468485        2500   30096.21    
+  NOTICE   main:           16    61468488        2500   30062.93    
+  NOTICE   main:           16    61468491        2500   30024.98    
+  NOTICE   main:           16    61468494        2500   29987.03    
+  NOTICE   main:           16    61468497        2500   29946.76    
+  NOTICE condsk:  1 output at   11  14  11   0
+  NOTICE   main:           16    61468500        2500   29904.88    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   46   36   87   62
+  NOTICE metpos: (mtime,ftime) -     61468560    61468440
+  NOTICE metinp: AWRF 1 8545   45   36   86   62 61468560 16 11 14 12
+  NOTICE   main:           17    61468503        2500   29862.43    
+  NOTICE   main:           17    61468506        2500   29819.17    
+  NOTICE   main:           17    61468509        2500   29776.80    
+  NOTICE   main:           17    61468512        2500   29736.95    
+  NOTICE   main:           17    61468515        2500   29697.94    
+  NOTICE   main:           17    61468518        2500   29658.38    
+  NOTICE   main:           17    61468521        2500   29620.82    
+  NOTICE   main:           17    61468524        2500   29582.32    
+  NOTICE   main:           17    61468527        2500   29542.29    
+  NOTICE   main:           17    61468530        2500   29501.07    
+  NOTICE   main:           17    61468533        2500   29459.72    
+  NOTICE   main:           17    61468536        2500   29421.57    
+  NOTICE   main:           17    61468539        2500   29381.97    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   46   36   87   62 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   46   36   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   46   36   87   62
+  NOTICE metinp: AWRF 1 8189   46   36   87   62 61468500 16 11 14 11
+  NOTICE metinp: AWRF 1 8545   46   36   87   62 61468560 16 11 14 12
+  NOTICE   main:           17    61468542        2500   29346.21    
+  NOTICE   main:           17    61468545        2500   29310.65    
+  NOTICE   main:           17    61468548        2500   29276.02    
+  NOTICE   main:           17    61468551        2500   29242.86    
+  NOTICE   main:           17    61468554        2500   29208.72    
+  NOTICE   main:           17    61468557        2500   29175.88    
+  NOTICE condsk:  1 output at   11  14  12   0
+  NOTICE   main:           17    61468560        2500   29145.29    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   48   36   88   62
+  NOTICE metpos: (mtime,ftime) -     61468620    61468500
+  NOTICE metinp: AWRF 1 8901   46   36   87   62 61468620 16 11 14 13
+  NOTICE   main:           18    61468564        2500   29101.78    
+  NOTICE   main:           18    61468568        2500   29058.07    
+  NOTICE   main:           18    61468572        2500   29012.49    
+  NOTICE   main:           18    61468576        2500   28966.53    
+  NOTICE   main:           18    61468580        2500   28918.04    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   48   36   88   62 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   48   36   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   48   36   88   62
+  NOTICE metinp: AWRF 1 8545   48   36   88   62 61468560 16 11 14 12
+  NOTICE metinp: AWRF 1 8901   48   36   88   62 61468620 16 11 14 13
+  NOTICE   main:           18    61468584        2500   28872.75    
+  NOTICE   main:           18    61468588        2500   28827.43    
+  NOTICE   main:           18    61468592        2500   28790.16    
+  NOTICE   main:           18    61468596        2500   28747.98    
+  NOTICE   main:           18    61468600        2500   28702.22    
+  NOTICE   main:           18    61468604        2500   28663.22    
+  NOTICE   main:           18    61468608        2500   28617.40    
+  NOTICE   main:           18    61468612        2500   28574.21    
+  NOTICE   main:           18    61468616        2500   28532.22    
+  NOTICE condsk:  1 output at   11  14  13   0
+  NOTICE   main:           18    61468620        2500   28486.68    
+                                                        Index  Height %Mass
+                                                           12  1330.0  0.27
+                                                           11  1110.0  3.31
+                                                           10   910.0  7.92
+                                                            9   730.0  9.09
+                                                            8   570.0 19.56
+                                                            7   430.0 15.08
+                                                            6   310.0 15.65
+                                                            5   210.0 10.06
+                                                            4   130.0  9.04
+                                                            3    70.0  5.21
+                                                            2    30.0  2.95
+                                                            1    10.0  1.86
+  NOTICE advrng: (kg ,xyr,xy1) -  1   48   36   90   63
+  NOTICE metpos: (mtime,ftime) -     61468680    61468560
+  NOTICE metinp: AWRF 1 9257   48   36   88   62 61468680 16 11 14 14
+  NOTICE   main:           19    61468624        2500   28439.28    
+  NOTICE   main:           19    61468628        2500   28392.20    
+  NOTICE   main:           19    61468632        2500   28340.94    
+  NOTICE   main:           19    61468636        2500   28299.00    
+  NOTICE   main:           19    61468640        2500   28252.12    
+  NOTICE   main:           19    61468644        2500   28205.12    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   48   36   90   63 shift
+  NOTICE metgrd: (kg, xyr,xy1) -     1   48   36   90   63
+  NOTICE metinp: AWRF 1 8901   48   36   90   63 61468620 16 11 14 13
+  NOTICE metinp: AWRF 1 9257   48   36   90   63 61468680 16 11 14 14
+  NOTICE   main:           19    61468648        2500   28160.38    
+  NOTICE   main:           19    61468652        2500   28113.84    
+  NOTICE   main:           19    61468656        2500   28066.88    
+  NOTICE   main:           19    61468660        2500   28024.38    
+  NOTICE   main:           19    61468664        2500   27982.60    
+  NOTICE   main:           19    61468668        2500   27944.68    
+  NOTICE   main:           19    61468672        2500   27902.44    
+  NOTICE   main:           19    61468676        2500   27859.89    
+  NOTICE condsk:  1 output at   11  14  14   0
+  NOTICE   main:           19    61468680        2500   27815.55    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   50   36   92   63
+  NOTICE metpos: (mtime,ftime) -     61468740    61468620
+  NOTICE metinp: AWRF 1 9613   48   36   90   63 61468740 16 11 14 15
+  NOTICE   main:           20    61468683        2500   27784.04    
+  NOTICE   main:           20    61468686        2500   27751.43    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   50   36   92   63 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   50   36   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   50   36   92   63
+  NOTICE metinp: AWRF 1 9257   50   36   92   63 61468680 16 11 14 14
+  NOTICE metinp: AWRF 1 9613   50   36   92   63 61468740 16 11 14 15
+  NOTICE   main:           20    61468689        2500   27715.72    
+  NOTICE   main:           20    61468692        2500   27682.29    
+  NOTICE   main:           20    61468695        2500   27648.95    
+  NOTICE   main:           20    61468698        2500   27614.96    
+  NOTICE   main:           20    61468701        2500   27578.85    
+  NOTICE   main:           20    61468704        2500   27545.74    
+  NOTICE   main:           20    61468707        2500   27509.97    
+  NOTICE   main:           20    61468710        2500   27478.30    
+  NOTICE   main:           20    61468713        2500   27441.82    
+  NOTICE   main:           20    61468716        2500   27407.31    
+  NOTICE   main:           20    61468719        2500   27375.77    
+  NOTICE   main:           20    61468722        2500   27345.43    
+  NOTICE   main:           20    61468725        2500   27316.34    
+  NOTICE   main:           20    61468728        2500   27284.01    
+  NOTICE   main:           20    61468731        2500   27250.86    
+  NOTICE   main:           20    61468734        2500   27215.04    
+  NOTICE   main:           20    61468737        2500   27181.66    
+  NOTICE condsk:  1 output at   11  14  15   0
+  NOTICE   main:           20    61468740        2500   27149.72    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   51   36   92   64
+  NOTICE metpos: (mtime,ftime) -     61468800    61468680
+  NOTICE metinp: AWRF 1 9969   50   36   92   63 61468800 16 11 14 16
+  NOTICE   main:           21    61468744        2500   27102.76    
+  NOTICE   main:           21    61468748        2500   27061.59    
+  NOTICE   main:           21    61468752        2500   27024.42    
+  NOTICE   main:           21    61468756        2500   26982.76    
+  NOTICE   main:           21    61468760        2500   26941.30    
+  NOTICE   main:           21    61468764        2500   26897.98    
+  NOTICE   main:           21    61468768        2500   26855.43    
+  NOTICE   main:           21    61468772        2500   26813.65    
+  NOTICE   main:           21    61468776        2500   26770.92    
+  NOTICE   main:           21    61468780        2500   26728.81    
+  NOTICE   main:           21    61468784        2500   26686.51    
+  NOTICE metsub: (kg ,xyr,xy1) -     1   51   36   92   64 shift
+  NOTICE metsub: (kg ,xyr,xy1) -     1   77   54   79   55 expand
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   77   54   33
+  NOTICE metgrd: (kg, xyr,xy1) -     1   77   54   66   55
+  NOTICE metinp: AWRF 1 9613   77   54   66   55 61468740 16 11 14 15
+  NOTICE metinp: AWRF 1 9969   77   54   66   55 61468800 16 11 14 16
+  NOTICE   main:           21    61468788        2500   26646.41    
+  NOTICE   main:           21    61468792        2500   26604.36    
+  NOTICE   main:           21    61468796        2500   26563.78    
+  NOTICE condsk:  1 output at   11  14  16   0
+  NOTICE   main:           21    61468800        2500   26519.36    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   77   54   66   56
+  NOTICE metpos: (mtime,ftime) -     61468860    61468740
+  NOTICE metinp: AWRF 110325   77   54   66   55 61468860 16 11 14 17
+  NOTICE   main:           22    61468804        2500   26476.18    
+  NOTICE   main:           22    61468808        2500   26436.31    
+ WARNING metpos: off spatial domain of all grids
+  NOTICE   main:           22    61468812        2500   26367.20    
+  NOTICE   main:           22    61468816        2500   26309.94    
+  NOTICE   main:           22    61468820        2500   26266.83    
+  NOTICE   main:           22    61468824        2500   26198.11    
+  NOTICE   main:           22    61468828        2500   26110.72    
+  NOTICE   main:           22    61468832        2500   25981.32    
+  NOTICE   main:           22    61468836        2500   25851.30    
+  NOTICE   main:           22    61468840        2500   25702.47    
+  NOTICE   main:           22    61468844        2500   25586.94    
+  NOTICE   main:           22    61468848        2500   25425.16    
+  NOTICE   main:           22    61468852        2500   25247.28    
+  NOTICE   main:           22    61468856        2500   25030.23    
+  NOTICE condsk:  1 output at   11  14  17   0
+  NOTICE   main:           22    61468860        2500   24829.55    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   77   54   66   57
+  NOTICE metpos: (mtime,ftime) -     61468920    61468800
+  NOTICE metinp: AWRF 110681   77   54   66   55 61468920 16 11 14 18
+  NOTICE   main:           23    61468864        2437   24443.76    
+  NOTICE   main:           23    61468868        2437   24248.56    
+  NOTICE   main:           23    61468872        2437   23879.11    
+  NOTICE   main:           23    61468876        2437   23403.63    
+  NOTICE   main:           23    61468880        2437   23108.22    
+  NOTICE   main:           23    61468884        2437   22755.96    
+  NOTICE   main:           23    61468888        2437   22446.56    
+  NOTICE   main:           23    61468892        2437   21914.49    
+  NOTICE   main:           23    61468896        2437   21536.04    
+  NOTICE   main:           23    61468900        2437   21179.82    
+  NOTICE   main:           23    61468904        2437   20883.52    
+  NOTICE   main:           23    61468908        2437   20433.11    
+  NOTICE   main:           23    61468912        2437   20048.36    
+  NOTICE   main:           23    61468916        2437   19593.77    
+  NOTICE condsk:  1 output at   11  14  18   0
+  NOTICE   main:           23    61468920        2437   19129.56    
+  NOTICE advrng: (kg ,xyr,xy1) -  1   77   54   66   58
+  NOTICE metpos: (mtime,ftime) -     61468980    61468860
+  NOTICE metinp: AWRF 111037   77   54   66   55 61468980 16 11 14 19
+  NOTICE   main:           24    61468924        2129   18657.08    
+  NOTICE   main:           24    61468928        2129   18338.85    
+  NOTICE   main:           24    61468932        2129   17956.10    
+  NOTICE   main:           24    61468936        2129   17566.47    
+  NOTICE   main:           24    61468940        2129   17245.01    
+  NOTICE   main:           24    61468944        2129   16940.98    
+  NOTICE   main:           24    61468948        2129   16578.83    
+  NOTICE   main:           24    61468952        2129   16311.93    
+  NOTICE   main:           24    61468956        2129   16020.30    
+  NOTICE   main:           24    61468960        2129   15734.93    
+  NOTICE   main:           24    61468964        2129   15452.03    
+  NOTICE   main:           24    61468968        2129   15151.48    
+  NOTICE   main:           24    61468972        2129   14927.70    
+  NOTICE   main:           24    61468976        2129   14682.25    
+  NOTICE   main:           24    61468980        2129   14503.92    
+                                                        Index  Height %Mass
+                                                           10   910.0  0.74
+                                                            9   730.0  9.58
+                                                            8   570.0 20.46
+                                                            7   430.0 19.92
+                                                            6   310.0 15.33
+                                                            5   210.0 11.14
+                                                            4   130.0  8.88
+                                                            3    70.0  7.07
+                                                            2    30.0  4.48
+                                                            1    10.0  2.41
