@@ -37,6 +37,10 @@ class dataApp(server.App):
         #because its html we can also add html tags
         return "these are the words we made: <b>%s</b> "%words
 
+    def getCustomCSS(self):
+        css="b {color:orange;}"
+        return css
+
 #instence of the app
 app = dataApp()
 app.launch()

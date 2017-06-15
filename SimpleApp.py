@@ -132,8 +132,21 @@ class UnemploymentApp(server.App):
     #     html = "%s\n%s" % (script, div)
     #     return html
 
+
+
     def getCustomJS(self):
-        return INLINE.js_raw[0]
+        file1 = open("sMap.js", "r").read()
+        file2 = open("jquery-3.2.0.js", "r").read()
+        file3 = open("jquery-ui.js", "r").read()
+        file4 = open("layer-opacity.js", "r").read()
+        file5 = open("layers.js", "r").read()
+        file6 = open("update.js", "r").read()
+        file7 = open("ol.js","r").read()
+        js = """
+        $('body').on('DOMNodeInserted', spyderRun());
+        """
+        list = '\n'.join([file7,file2,file3,file1,file4,file5,js])
+        return list
 
     def getCustomCSS(self):
         return INLINE.css_raw[0]
@@ -144,7 +157,8 @@ class UnemploymentApp(server.App):
 
         #words=params["words"]
         #because its html we can also add html tags
-        return "these are the words we made: <b>%s</b> "%data
+        #return "these are the words we made: <b>%s</b> "%data
+        return "%s"%data
 
 if __name__ == '__main__':
     app = UnemploymentApp()

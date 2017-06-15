@@ -60,65 +60,68 @@
 //    hrchng.addEventListener('change', function() {
 //        alert("Hour: "+document.getElementById('simhr').value); 
 //    });
-    
-    /**
-     * Elements that make up the popup
-     */
-    var container = document.getElementById('popup');
-    var content = document.getElementById('popup-content');
-    var closer = document.getElementById('popup-closer');
-    
-    /**
-     * Add a click handler to hide the popup.
-     * @return {boolean} Don't follow the href.
-     */
-    closer.onclick = function() {
-        poplay.setPosition(undefined);
-        closer.blur();
-        return false;
-    };
 
-    var poplay = new ol.Overlay({
-        element: container,
-        autoPan: true
-    });
-    
-    selemap.addOverlay(poplay);
+    function spyderRun(){
+        /**
+         * Elements that make up the popup
+         */
+        var container = document.getElementById('popup');
+        var content = document.getElementById('popup-content');
+        var closer = document.getElementById('popup-closer');
 
-    // display popup on click
-    selemap.on('click', function(evt) {
-        var feature = selemap.forEachFeatureAtPixel(evt.pixel,
-            function(feature) {
-                return feature;
+        /**
+         * Add a click handler to hide the popup.
+         * @return {boolean} Don't follow the href.
+         */
+        if(onclick === "NULL")
+         {return;}
+        closer.onclick = function() {
+            poplay.setPosition(undefined);
+            closer.blur();
+            return false;
+        };
+
+        var poplay = new ol.Overlay({
+            element: container,
+            autoPan: true
         });
-        
-        if (feature) {
-          var coordinates = feature.getGeometry().getCoordinates();
-          var locName = feature.get('name');
-          content.innerHTML = locName;
-          poplay.setPosition(coordinates);
-          
-          var simHour = pad(document.getElementById('simhr').value);
-           
-          updateDisplayMap(locName, simHour);
-          
-        }
-    });
-            
-    var target = selemap.getTarget();
-    var jTarget = typeof target === "string" ? $("#" + target) : $(target);
-    // change mouse cursor when over marker
-    $(selemap.getViewport()).on('mousemove', function (e) {
-        var pixel = selemap.getEventPixel(e.originalEvent);
-        var hit = selemap.forEachFeatureAtPixel(pixel, function (feature, layer) {
-           return true;
+
+        selemap.addOverlay(poplay);
+
+        // display popup on click
+        selemap.on('click', function(evt) {
+            var feature = selemap.forEachFeatureAtPixel(evt.pixel,
+                function(feature) {
+                    return feature;
+            });
+
+            if (feature) {
+              var coordinates = feature.getGeometry().getCoordinates();
+              var locName = feature.get('name');
+              content.innerHTML = locName;
+              poplay.setPosition(coordinates);
+
+              var simHour = pad(document.getElementById('simhr').value);
+
+              updateDisplayMap(locName, simHour);
+
+            }
         });
-        if (hit) {
-           jTarget.css("cursor", "pointer");
-        } else {
-           jTarget.css("cursor", "");
-        }
-    });
-    
+
+        var target = selemap.getTarget();
+        var jTarget = typeof target === "string" ? $("#" + target) : $(target);
+        // change mouse cursor when over marker
+        $(selemap.getViewport()).on('mousemove', function (e) {
+            var pixel = selemap.getEventPixel(e.originalEvent);
+            var hit = selemap.forEachFeatureAtPixel(pixel, function (feature, layer) {
+               return true;
+            });
+            if (hit) {
+               jTarget.css("cursor", "pointer");
+            } else {
+               jTarget.css("cursor", "");
+            }
+        });
+    }
 
   
