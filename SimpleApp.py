@@ -120,7 +120,9 @@ class UnemploymentApp(server.App):
         return list
 
     def getCustomCSS(self):
-        return INLINE.css_raw[0]
+        file = open("style.css", "r").read()
+        return file
+        #return INLINE.css_raw[0]
 
     def getHTML(self, params):
         file = open("deems/bootstrap.html", "r")

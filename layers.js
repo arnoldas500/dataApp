@@ -100,7 +100,7 @@
         var CESTMfeature = new ol.Feature({
             geometry: new ol.geom.Point(ol.proj.transform([-73.832332, 42.692142],
                     'EPSG:4326','EPSG:3857')),
-            name: 'CESTM'
+            name: 'CESTM_roof-14'
         });
 
         var CHAZfeature = new ol.Feature({
@@ -181,11 +181,21 @@
             name: 'WEBS'
         });
 
-
+        locFeatures.push(BELLfeature);
         locFeatures.push(BUFFfeature);
+        locFeatures.push(CHAZfeature);
+        locFeatures.push(CLYMfeature);
+        locFeatures.push(CESTMfeature);
+        locFeatures.push(EHAMfeature);
+        locFeatures.push(JORDfeature);
+        locFeatures.push(OWEGfeature);
         locFeatures.push(QUEEfeature);
+        locFeatures.push(REDHfeature);
         locFeatures.push(VOORfeature);
+        locFeatures.push(SUFFfeature);
         locFeatures.push(TUPPfeature);
+        locFeatures.push(WANTfeature);
+        locFeatures.push(WEBSfeature);
         locFeatures.push(WFMBfeature);
 
         var vectorSource = new ol.source.Vector({
@@ -216,8 +226,18 @@
          * Elements that make up the popup
          */
         var container = document.getElementById('popup');
-        var content = document.getElementById('popup-content');
+        var content = document.getElementById('popup-content')
         var closer = document.getElementById('popup-closer');
+
+        content.onclick = function() {inputChange()};
+
+        //drop down for onclick
+        function inputChange(){
+        //document.getElementById("myDropDown").classList.toggle("show");
+        var selectBox = document.getElementById("state2");
+        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+        alert(selectedValue);
+        }
 
         /**
          * Add a click handler to hide the popup.
