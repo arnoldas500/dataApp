@@ -143,7 +143,10 @@ class UnemploymentApp(server.App):
         file6 = open("update.js", "r").read()
         file7 = open("ol.js","r").read()
         js = """
-        $('body').on('DOMNodeInserted', spyderRun());
+        $(document).ajaxSuccess(function(event,xhr,options){
+        spyderRun()
+        });
+        //$('body').on('DOMNodeInserted', spyderRun());
         """
         list = '\n'.join([file7,file2,file3,file1,file4,file5,js])
         return list
