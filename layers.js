@@ -85,10 +85,52 @@
         // Set up HYSPLIT location markers as a vector layer on sele-map
         var locFeatures=[];
 
+        var BELLfeature = new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.transform([-76.11765, 43.78823],
+            'EPSG:4326', 'EPSG:3857')),
+            name: 'BELL'
+        });
+
         var BUFFfeature = new ol.Feature({
             geometry: new ol.geom.Point(ol.proj.transform([-78.76717, 43.00017],
                     'EPSG:4326','EPSG:3857')),
             name: 'BUFF'
+        });
+
+        var CESTMfeature = new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.transform([-73.832332, 42.692142],
+                    'EPSG:4326','EPSG:3857')),
+            name: 'CESTM'
+        });
+
+        var CHAZfeature = new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.transform([-73.46634, 44.889],
+                    'EPSG:4326','EPSG:3857')),
+            name: 'CHAZ'
+        });
+
+        var CLYMfeature = new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.transform([-79.62746, 42.02143],
+                    'EPSG:4326','EPSG:3857')),
+            name: 'CLYM'
+        });
+
+        var EHAMfeature = new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.transform([-72.20094, 40.970394],
+                    'EPSG:4326','EPSG:3857')),
+            name: 'EHAM'
+        });
+
+        var JORDfeature = new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.transform([-76.469993, 43.068747],
+                    'EPSG:4326','EPSG:3857')),
+            name: 'JORD'
+        });
+
+        var OWEGfeature = new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.transform([-76.253072, 42.024938],
+                    'EPSG:4326','EPSG:3857')),
+            name: 'OWEG'
         });
 
         var QUEEfeature = new ol.Feature({
@@ -97,10 +139,22 @@
             name: 'QUEE'
         });
 
+        var REDHfeature = new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.transform([-73.88412, 41.99983],
+                    'EPSG:4326','EPSG:3857')),
+            name: 'REDH'
+        });
+
         var VOORfeature = new ol.Feature({
             geometry: new ol.geom.Point(ol.proj.transform([-73.97562, 42.65242],
                     'EPSG:4326','EPSG:3857')),
             name: 'VOOR'
+        });
+
+        var SUFFfeature = new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.transform([-74.085979, 41.133034],
+                    'EPSG:4326','EPSG:3857')),
+            name: 'SUFF'
         });
 
         var TUPPfeature = new ol.Feature({
@@ -109,11 +163,24 @@
             name: 'TUPP'
         });
 
+        var WANTfeature = new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.transform([-73.5054, 40.65025],
+                    'EPSG:4326','EPSG:3857')),
+            name: 'WANT'
+        });
+
         var WFMBfeature = new ol.Feature({
             geometry: new ol.geom.Point(ol.proj.transform([-73.858829, 44.393236],
                     'EPSG:4326','EPSG:3857')),
             name: 'WFMB'
         });
+
+        var WEBSfeature = new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.transform([-77.41238, 43.2601],
+                    'EPSG:4326','EPSG:3857')),
+            name: 'WEBS'
+        });
+
 
         locFeatures.push(BUFFfeature);
         locFeatures.push(QUEEfeature);

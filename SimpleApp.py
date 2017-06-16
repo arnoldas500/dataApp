@@ -101,38 +101,6 @@ class UnemploymentApp(server.App):
         "on_page_load": True
     }]
 
-    # def getHTML(self, params):
-    #     # state = params['state']
-    #     state='ny'
-    #     # if state == 'NY':
-    #     #     data = self.data
-    #     # else:
-    #     data = self.data[self.data['state'] == 'ny']
-    #
-    #     TOOLS = "pan,wheel_zoom,box_zoom,reset,hover,previewsave"
-    #
-    #     try:
-    #         fig = plotting.patches(
-    #             data['lons'], data['lats'], fill_color=data['color'], fill_alpha=0.7, tools=TOOLS,
-    #             line_color="white", line_width=0.5, title=state.upper() + " Profiler Data"
-    #         )
-    #     except Exception:
-    #         fig = plotting.figure(title=state.upper() + " Profiler Data", tools=TOOLS)
-    #         fig.patches(
-    #             data['lons'], data['lats'], fill_color=data['color'],
-    #             fill_alpha=0.7, line_color="white", line_width=0.5
-    #         )
-    #
-    #     hover = fig.select(dict(type=HoverTool))
-    #     hover.tooltips = OrderedDict([
-    #         ("index", "$index")
-    #     ])
-    #
-    #     script, div = components(fig, CDN)
-    #     html = "%s\n%s" % (script, div)
-    #     return html
-
-
 
     def getCustomJS(self):
         file1 = open("sMap.js", "r").read()
@@ -187,5 +155,6 @@ if __name__ == '__main__':
             "action_id": "update_data2"
         }
     ]
-    app.launch(port=9097)
+    app.launch(host='0.0.0.0', port=8080)
+
 
