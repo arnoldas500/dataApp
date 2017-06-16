@@ -229,7 +229,9 @@
         var content = document.getElementById('popup-content')
         var closer = document.getElementById('popup-closer');
 
-        content.onclick = function() {inputChange()};
+        //content.onclick = function() {inputChange()};
+        /*
+        container.onclick = function() {inputChange()};
 
         //drop down for onclick
         function inputChange(){
@@ -237,8 +239,13 @@
         var selectBox = document.getElementById("state2");
         var selectedValue = selectBox.options[selectBox.selectedIndex].value;
         alert(selectedValue);
-        }
-
+        alert(selectBox);
+        if(selectBox != selectedValue){
+        selectBox.options[selectBox.selectedIndex].value = "CESTM_roof-14"}
+        alert(selectBox.options[selectBox.selectedIndex].value);
+        selectBox.options[selectBox.selectedIndex].dispatchEvent(new Event('change'));
+        };
+*/
         /**
          * Add a click handler to hide the popup.
          * @return {boolean} Don't follow the href.
@@ -262,6 +269,15 @@
         selemap.on('click', function(evt) {
             var feature = selemap.forEachFeatureAtPixel(evt.pixel,
                 function(feature) {
+                //selecting the correct graphs to show based to the site selected
+                    var selectBox = document.getElementById("state2");
+                var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+                //alert(selectedValue);
+                //alert(selectBox);
+                if(selectBox != selectedValue){
+                selectBox.options[selectBox.selectedIndex].value = feature.get('name')}
+                alert(selectBox.options[selectBox.selectedIndex].value);
+                selectBox.options[selectBox.selectedIndex].dispatchEvent(new Event('change'));
                     return feature;
             });
 
@@ -275,6 +291,15 @@
 
               updateDisplayMap(locName, simHour);
 
+              //selecting the correct graphs to show based to the site selected
+                var selectBox = document.getElementById("state2");
+                var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+                alert(selectedValue);
+                alert(selectBox);
+                if(selectBox != selectedValue){
+                selectBox.options[selectBox.selectedIndex].value = locName}
+                alert(selectBox.options[selectBox.selectedIndex].value);
+                selectBox.options[selectBox.selectedIndex].dispatchEvent(new Event('change'));
             }
         });
 
