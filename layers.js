@@ -275,9 +275,10 @@
                 //alert(selectedValue);
                 //alert(selectBox);
                 if(selectBox != selectedValue){
-                selectBox.options[selectBox.selectedIndex].value = feature.get('name')}
-                alert(selectBox.options[selectBox.selectedIndex].value);
-                selectBox.options[selectBox.selectedIndex].dispatchEvent(new Event('change'));
+                selectBox.options[selectBox.selectedIndex].value = "PROF_"+feature.get('name')}
+                //alert(selectBox.options[selectBox.selectedIndex].value);
+                inputChange( 'state2', 'id', '', '', '', 'update_data');
+//                selectBox.options[selectBox.selectedIndex].dispatchEvent(new Event('change'));
                     return feature;
             });
 
@@ -294,11 +295,11 @@
               //selecting the correct graphs to show based to the site selected
                 var selectBox = document.getElementById("state2");
                 var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-                alert(selectedValue);
-                alert(selectBox);
+                //alert(selectedValue);
+                //alert(selectBox);
                 if(selectBox != selectedValue){
                 selectBox.options[selectBox.selectedIndex].value = locName}
-                alert(selectBox.options[selectBox.selectedIndex].value);
+                //alert(selectBox.options[selectBox.selectedIndex].value);
                 selectBox.options[selectBox.selectedIndex].dispatchEvent(new Event('change'));
             }
         });

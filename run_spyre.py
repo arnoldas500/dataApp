@@ -17,6 +17,8 @@ sites = [ re.sub(r"_lidar\.nc|_mwr\.nc", "", site) for site in nc_files ]
 sites = list(set(sites))
 print(sites)
 
+
+
 class SimpleApp(server.App):
     title = "xCITE Data Laboratory"
     inputs = [{
@@ -73,6 +75,8 @@ class SimpleApp(server.App):
 	"control_id": "update_data"
     }]
 
+
+#got everything below
     def getData (self, params):
         date_str = '20170225'
         site_str = params['site']
