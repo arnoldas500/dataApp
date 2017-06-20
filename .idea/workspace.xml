@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f4b5adc-ce00-49c0-b557-a37be314dab2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimpleApp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testStockEx.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/spyre.iml" afterPath="$PROJECT_DIR$/.idea/spyre.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataApp.py" afterPath="$PROJECT_DIR$/dataApp.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +27,8 @@
       <file leaf-file-name="dataApp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dataApp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="160" column="8" lean-forward="true" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="15" />
+            <state relative-caret-position="429">
+              <caret line="332" column="40" lean-forward="false" selection-start-line="332" selection-start-column="40" selection-end-line="332" selection-end-column="40" />
               <folding>
                 <element signature="e#62#86#0" expanded="true" />
               </folding>
@@ -622,8 +617,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataApp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="160" column="8" lean-forward="true" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="15" />
+        <state relative-caret-position="429">
+          <caret line="332" column="40" lean-forward="false" selection-start-line="332" selection-start-column="40" selection-end-line="332" selection-end-column="40" />
           <folding>
             <element signature="e#62#86#0" expanded="true" />
           </folding>

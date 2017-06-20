@@ -330,5 +330,5 @@ if __name__ == '__main__':
     # }
     # ]
     # instence of the app
-    app.launch(host='0.0.0.0', port=9379)
+    app.launch(host='0.0.0.0', port=8080)
 
