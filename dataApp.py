@@ -3,6 +3,7 @@
 from spyre import server
 
 import os, re
+import numpy as np
 import xarray as xr
 import rasppy as rasp
 import matplotlib as mpl
@@ -45,7 +46,12 @@ class dataApp(server.App):
             "type": "plot",
             "id": "plot",
             "control_id": "update_data"
-        }
+        },
+        # {
+        #     "type": "plot",
+        #     "id": "plot2",
+        #     "control_id": "update_data"
+        # }
     ]
 
 
@@ -84,19 +90,38 @@ class dataApp(server.App):
         file = open("style.css", "r").read()
         file2 = open("ol.css", "r").read()
         css1 = """
+        .menu{
+        background: rgba(181,208,208,.5);
+        }
         body {
            /* background: radial-gradient(circle, red,black, black); */ 
            /* background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
            /* background: linear-gradient(to bottom, gray, blue); */
-           background: url(spinning_wheel);
+           background: url(spinning_wheel) left top;
+           background-attachment: fixed;
+           background-size: 1280px 1122px;
+           /* background-color: lightgray; */
+           
         }
         h1 {
            text-transform: none !important;
            font-style: italic !important;
         }
+        select {
+           background: white;
+        }
+        .spyrePad--vertS {
+           font-weight: bold;
+        }
+        .spyrePad--vertS div {
+           font-weight: normal;
+        }
+        .spyrePad--bottomM {
+           padding-left: 10px;
+        }
         #html_id {
-           margin-top: -17.5px;
-           margin-left: 15px;
+           margin-top: -18px;
+           /* margin-left: 15px; */
         }
         #state {
            visibility: hidden !important;
@@ -134,50 +159,67 @@ class dataApp(server.App):
         return [lidar, mwr]
 
     def getPlot(self, params):
+        print(params)
         # just a plain heatmap for now
         [lidar, mwr] = self.getData(params)
+        lidar_vars = []
+        mwr_vars = []
         if lidar is not None:
             lidar_vars = list(lidar.data_vars)
-        else:
-            lidar_vars = []
         if mwr is not None:
             mwr_vars = list(mwr.data_vars)
-        else:
-            mwr_vars = []
-        ds = params['dataset']
-        if ds in lidar_vars:
-            if ds in ['vwind']:
-                lidar[params['dataset']].plot(x='Time', y='Range', center=0, robust=True)
-            else:
-                lidar[params['dataset']].plot(x='Time', y='Range', center=False, robust=True, cmap='jet')
-        elif ds in mwr_vars:
-            mwr[params['dataset']].plot(x='Time', y='Range', robust=True, cmap='jet')
-        elif ds == 'barbs':
-            barb_bins = .25
-            lidar['Windspeed'].rasp.plot_barbs(x='Time', y='Range', components=(b'x', b'y'), resample='1H',
-                                               resampley=barb_bins)
+        dsname = params['dataset']
+        if dsname in lidar_vars:
+            ds = lidar[dsname]
+        elif dsname in mwr_vars:
+            ds = mwr[dsname]
+        elif dsname == 'barbs':
+            ds = lidar['Windspeed']
         else:
             # need to provide some type of error
             pass
-        # plot barbs if desired
-        print(params)
-        if 'barbs' in params['checks']:
-        # if params['barbs'] == 'True':
-            if ds in lidar_vars:
-                barb_bins = .25
-            else:
-                barb_bins = .25
-            lidar['Windspeed'].rasp.plot_barbs(x='Time', y='Range', components=('x', 'y'),
-                                               resample='1H', resampley=barb_bins, ax=plt.gca())
-        if 'cape' in params['checks']:
-        # if params['cape'] == 'True':
-            ax2 = plt.gca().twinx()
-            mwr['cape'].plot(ax=ax2, color='#444444', lw=3)
-            mwr['cape'].plot(ax=ax2, color='pink', lw=1.5)
-            ax2.set_ylabel('CAPE (J/kg)')
-            plt.gca().set_xlim([mwr.coords['Time'].values.min(), mwr.coords['Time'].values.max()])
-        # plt.title(' '.join([params['site'], params['dataset']]))
-        plt.title(' '.join([params['state2'], params['dataset']]))
+        plot_type = params['type']
+        if plot_type == 'skewt':
+            mwr.isel(Time=0).rasp.skewt()
+            plt.title(' '.join([params['state2'], 'SkewT']))
+        elif plot_type == 'vertical':
+            n_lines = 4
+            plt.gca().set_color_cycle([plt.cm.rainbow(i) for i in np.linspace(0, 1, n_lines)])
+            ds.resample('6H', 'Time').isel(Time=slice(0,n_lines)).rasp.plot_profile(y='Range')
+            plt.title(' '.join([params['state2'], dsname]))
+        elif plot_type == 'barbs':
+            barb_bins = .25
+            lidar['Windspeed'].rasp.plot_barbs(x='Time', y='Range', components=('x', 'y'), resample='1H',
+                                               resampley=barb_bins)
+            plt.title(' '.join([params['state2'], 'Wind']))
+        else:
+            if plot_type == 'heat':
+                if dsname in ['vwind']:
+                    ds.plot(x='Time', y='Range', center=0, robust=True)
+                else:
+                    ds.plot(x='Time', y='Range', center=False, robust=True, cmap='jet')
+            elif plot_type == 'contour':
+                if dsname in ['vwind']:
+                    ds.plot.contourf(x='Time', y='Range', center=0, robust=True)
+                else:
+                    ds.plot.contourf(x='Time', y='Range', center=False, robust=True, cmap='jet')
+
+            # plot barbs if desired
+            if 'barbs' in params['checks']:
+                if dsname in lidar_vars:
+                    barb_bins = .25
+                else:
+                    barb_bins = .25
+                lidar['Windspeed'].rasp.plot_barbs(x='Time', y='Range', components=('x', 'y'),
+                                                   resample='1H', resampley=barb_bins, ax=plt.gca())
+            if 'cape' in params['checks']:
+                ax1_twin = plt.gca().twinx()
+                mwr['cape'].plot(ax=ax1_twin, color='#444444', lw=3)
+                mwr['cape'].plot(ax=ax1_twin, color='pink', lw=1.5)
+                ax1_twin.set_ylabel('CAPE (J/kg)')
+                plt.gca().set_xlim([mwr.coords['Time'].values.min(), mwr.coords['Time'].values.max()])
+            # plt.title(' '.join([params['site'], params['dataset']]))
+            plt.title(' '.join([params['state2'], dsname]))
         return plt.gca()
 
 if __name__ == '__main__':
@@ -231,11 +273,25 @@ if __name__ == '__main__':
             "action_id": "update_data"
         },
         {
-            "type": 'checkboxgroup',
-            "label": 'Features',
+            "type": 'radiobuttons',
+            "label": 'Choose plot type',
             "options": [
-                {"label": "Wind Barbs", "value": 'barbs'},
-                {"label": "CAPE", "value": 'cape'}
+                {"label": "Heatmap", "value": "heat"},
+                {"label": "Filled Contour", "value": "contour"},
+                {"label": "Vertical Line Plot", "value": "vertical"},
+                {"label": "Wind Barbs", "value": "barbs"},
+                {"label": "SkewT", "value": "skewt"}
+            ],
+            "value": "heat",
+            "key": 'type',
+            "action_id": "update_data"
+        },
+        {
+            "type": 'checkboxgroup',
+            "label": 'Options',
+            "options": [
+                {"label": "Overlay Wind Barbs", "value": 'barbs'},
+                {"label": "Overlay CAPE", "value": 'cape'}
             ],
             "key": 'checks',
             "action_id": "update_data"
